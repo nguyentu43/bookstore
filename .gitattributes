@@ -1,0 +1,2 @@
+lib/* linguist-vendored
+lib/app.js linguist-vendored=false
