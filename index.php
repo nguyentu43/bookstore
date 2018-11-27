@@ -232,7 +232,7 @@
 	?>
 
 	<footer class="container-fulid text-center">
-		<h5>Thiết kế bởi Nhóm 4</h5>
+		<h5>Bookstore</h5>
 	</footer>
 
 	<script src="lib/app.js"></script>
