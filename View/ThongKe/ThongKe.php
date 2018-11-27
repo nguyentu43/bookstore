@@ -7,7 +7,11 @@
 			$option_month.="<option value='$i'>$i</option>";
 	}
 
-	$arr = [2016, 2017];
+	$arr = [];
+	
+	$year = 2016;
+	foreach((range(0, date('Y') - $year) as $i)
+		$arr[] = $year + $i;
 
 	$option_year = '';
 	for ($i=0; $i <count($arr) ; $i++) { 
