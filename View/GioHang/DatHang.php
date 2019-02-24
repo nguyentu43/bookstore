@@ -37,7 +37,7 @@
 						<label for="email">Email: </label>
 						<input type="email" class="form-control" name="email" placeholder="Nhập địa chỉ email" required <?php if(isset($email)) echo "value='$email'"; ?>>
 					</div>
-					<input type="hidden" value="dathang" name="act">
+					<input type="hidden" value="DatHang" name="act">
 					<button type="submit" class="btn btn-danger" name="btnDatHang">Đặt hàng</button>
 				</form>
 			</div>
