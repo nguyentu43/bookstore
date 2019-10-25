@@ -1,5 +1,5 @@
 # Bookstore 
-MVC PHP
+PHP
 
 [Demo](https://ntbookstore.000webhostapp.com)
 
