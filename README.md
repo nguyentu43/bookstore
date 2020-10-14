@@ -1,7 +1,7 @@
 # Bookstore 
 PHP
 
-[Demo](https://ntbookstore.000webhostapp.com)
+[Run Demo](https://bstore-demo.000webhostapp.com/index.php)
 
 * Frontend
 ![alt text](https://github.com/nguyentu43/bookstore/raw/master/screenshot-1.png)
