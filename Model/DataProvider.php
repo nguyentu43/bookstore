@@ -9,11 +9,11 @@ class DataProvider
 	function ExecuteQuery($sql)
 	{
 		mysqli_query($this->link,"set names 'utf8'");
-		return mysqli_query($this->link, $sql);
+		return mysqli_query($this->link, strtoupper($sql));
 	}
 	function ExecuteQueryInsert($sql)
 	{
-		$result=$this->ExecuteQuery($sql);
+		$result=$this->ExecuteQuery(strtoupper($sql));
 		if($result > 0)
 		{
 			return mysqli_insert_id($this->link);// tra ve id vua moi insert
@@ -24,17 +24,17 @@ class DataProvider
 	
 	function Fetch($sql)
 	{
-		$result=$this->ExecuteQuery($sql);
+		$result=$this->ExecuteQuery(strtoupper($sql));
 		return mysqli_fetch_assoc($result);
 	}
 	function NumRows($sql)
 	{
-		$result=$this->ExecuteQuery($sql);
+		$result=$this->ExecuteQuery(strtoupper($sql));
 		return mysqli_num_rows($result);
 	}
 	function FetchAll($sql)
 	{
-		$result=$this->ExecuteQuery($sql);
+		$result=$this->ExecuteQuery(strtoupper($sql));
 		$arr=array();
 		while($row=mysqli_fetch_assoc($result))
 		{
