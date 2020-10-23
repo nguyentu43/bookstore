@@ -28,6 +28,8 @@ SET time_zone = "+00:00";
 -- Cấu trúc bảng cho bảng `BINHLUAN`
 --
 
+USE bansach
+
 CREATE TABLE `BINHLUAN` (
   `MASACH` int(11) NOT NULL,
   `ID` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
@@ -412,7 +414,7 @@ CREATE TABLE `TAIKHOAN` (
 --
 
 INSERT INTO `TAIKHOAN` (`MATK`, `TENTK`, `MATKHAU`, `CHUCVU`) VALUES
-(1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 'Quản lý'),
+(1, 'admin123', '21232f297a57a5a743894a0e4a801fc3', 'Quản lý'),
 (6, 'user123', 'e10adc3949ba59abbe56e057f20f883e', 'Khách hàng');
 
 --

@@ -1,0 +1,28 @@
+version: "3.8"
+
+services: 
+    db:
+        build: ./mysql
+        environment: 
+            - MYSQL_ROOT_PASSWORD=root
+            - MYSQL_DATABASE=bansach
+
+    phpmyadmin:
+        image: phpmyadmin:5.0.2-apache
+        environment: 
+            - DB_HOST=db
+        restart: always
+        ports: 
+            - 8080:80
+
+    bookstore:
+        build: .
+        environment: 
+            - DB_HOST=db
+            - DB_NAME=bansach
+            - DB_USER=root
+            - DB_PASS=root
+        ports: 
+            - 80:80
+        volumes: 
+            - .:/var/www/html
